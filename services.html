@@ -46,35 +46,76 @@
 
       <div class="main">
         <!-- SlideShow--------------------------------------------------------------->
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <div class="bannertext">
-                Your <br>Logistics <br> <span class="whitebold">Partner</span>
-              </div>
-              <img src="https://app.salesdrip.com/users/myteam45814/Media4.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-              <div class="bannertext">
-                Your <br>Logistics <br> <span class="whitebold">Partner</span>
-              </div>
-              <img src="https://app.salesdrip.com/users/myteam45814/Media14.jpg" style="width:100%">
+        <div class="services">
+          <div class="ourservices">
+            <div class="bannertextservice">
+             Our <br> <span class="whitebold">Services</span>
             </div>
           </div>
-          <!-- End SlideShow -------------------------------------------------------->
-          <div class="simplycare">
-            <div class="sectiontitle">
-              #wesimplycare
+          <div class="servicesection dark">
+            <div class="servimg">
+              <img src="https://app.salesdrip.com/users/myteam45814/Media7.png" alt="">
             </div>
-            <div class="underlinestyle">
-              <div class="topline"></div>
-              <div class="bottomline"></div>
-            </div>
-            <div class="italictext">
-              LandCal was born with the concept of taking customer service to the next level to let them know
-              that <br> we’re more than a traditional broker. We’re focused on the customer experience building long-term <br>
-              sustainable partnerships that foster innovation throughout the logistics supply chain.
+            <div class="servpara">
+              <div class="sectiontitle">
+                consultation
+              </div>
+              <div class="underlinestyle lowspace">
+                <div class="topline"></div>
+                <div class="bottomline"></div>
+              </div>
+              We look to improve customer service operations in order to develop cost-effective solutions.
             </div>
           </div>
+          <div class="servicesection dark">
+            <div class="servimg">
+              <img src="https://app.salesdrip.com/users/myteam45814/Media16.png" alt="">
+            </div>
+            <div class="servpara">
+              <div class="sectiontitle">
+                logistics
+              </div>
+              <div class="underlinestyle lowspace">
+                <div class="topline"></div>
+                <div class="bottomline"></div>
+              </div>
+              Coordinate, plan and manage your freight both domestically and internationally.
+            </div>
+            </div>
+          </div>
+          <div class="servicesection dark">
+            <div class="servimg">
+              <img src="https://app.salesdrip.com/users/myteam45814/Media15.png" alt="">
+            </div>
+            <div class="servpara">
+              <div class="sectiontitle">
+                Warehousing
+              </div>
+              <div class="underlinestyle lowspace">
+                <div class="topline"></div>
+                <div class="bottomline"></div>
+              </div>
+              With facilities around the United States, all climate controlled and safely secured.
+            </div>
+          </div>
+          <div class="servicesection dark">
+            <div class="servimg">
+              <img src="https://app.salesdrip.com/users/myteam45814/Media11.png" alt="">
+            </div>
+            <div class="servpara">
+              <div class="sectiontitle">
+                Freight
+              </div>
+              <div class="underlinestyle lowspace">
+                <div class="topline"></div>
+                <div class="bottomline"></div>
+              </div>
+              Domestic and International, mission-critical goods to less-than-truckload–we do it all!
+            </div>
+          </div>
+
+        </div>
+
           <!-- Sponsor Banner -------------------------------------------------------------------->
 
           <div class="sponsorbanner">
@@ -90,7 +131,6 @@
 
 
 
-      </div>
 
     <!-- Footer Section ------------------------------------------------------>
     <div class="footsection">
@@ -140,30 +180,5 @@
 
       </div>
     </div>
-
-    <!-- SlideShow Script------------------------------------------------------------------------>
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-
-        setTimeout(showSlides, 12000); // Change image every 2 seconds
-      }
-</script>
-<!-- End Slideshow script---------------------------------------------------------------------->
-
 </body>
 </html>

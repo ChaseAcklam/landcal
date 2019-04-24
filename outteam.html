@@ -45,36 +45,32 @@
 			<!-- end header area ---------------------------------------------------->
 
       <div class="main">
-        <!-- SlideShow--------------------------------------------------------------->
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <div class="bannertext">
-                Your <br>Logistics <br> <span class="whitebold">Partner</span>
-              </div>
-              <img src="https://app.salesdrip.com/users/myteam45814/Media4.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-              <div class="bannertext">
-                Your <br>Logistics <br> <span class="whitebold">Partner</span>
-              </div>
-              <img src="https://app.salesdrip.com/users/myteam45814/Media14.jpg" style="width:100%">
+        <div class="whyus">
+          <div class="whyussection">
+            <div class="bannertextservice">
+            Why <br> <span class="whitebold">landcal?</span>
             </div>
           </div>
-          <!-- End SlideShow -------------------------------------------------------->
-          <div class="simplycare">
-            <div class="sectiontitle">
-              #wesimplycare
+          <div class="whysection dark">
+            <div class="reason">
+              <h2>leader</h2><br>
+              USING OUR INDUSTRY EXPERIENCE TO FIND YOUR PERFECT SOLUTION
             </div>
-            <div class="underlinestyle">
-              <div class="topline"></div>
-              <div class="bottomline"></div>
+            <div class="reason">
+              <h2>trusted</h2><br>
+              SATISFACTION ACROSS MULTIPLE COUNTRIES AND INDUSTRIES
             </div>
-            <div class="italictext">
-              LandCal was born with the concept of taking customer service to the next level to let them know
-              that <br> we’re more than a traditional broker. We’re focused on the customer experience building long-term <br>
-              sustainable partnerships that foster innovation throughout the logistics supply chain.
+            <div class="reason">
+              <h2>fair</h2><br>
+              ALWAYS PROVIDING CLEAR, CONCISE PRICING
+            </div>
+            <div class="reason">
+              <h2>U.S.A.</h2> <br>
+              PROUDLY OWNED AND OPERATED FROM LEXINGTON, KY, U.S.A
             </div>
           </div>
+        </div>
+
           <!-- Sponsor Banner -------------------------------------------------------------------->
 
           <div class="sponsorbanner">
@@ -90,7 +86,6 @@
 
 
 
-      </div>
 
     <!-- Footer Section ------------------------------------------------------>
     <div class="footsection">
@@ -140,30 +135,5 @@
 
       </div>
     </div>
-
-    <!-- SlideShow Script------------------------------------------------------------------------>
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-
-        setTimeout(showSlides, 12000); // Change image every 2 seconds
-      }
-</script>
-<!-- End Slideshow script---------------------------------------------------------------------->
-
 </body>
 </html>

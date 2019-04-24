@@ -45,36 +45,63 @@
 			<!-- end header area ---------------------------------------------------->
 
       <div class="main">
-        <!-- SlideShow--------------------------------------------------------------->
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <div class="bannertext">
-                Your <br>Logistics <br> <span class="whitebold">Partner</span>
-              </div>
-              <img src="https://app.salesdrip.com/users/myteam45814/Media4.jpg" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-              <div class="bannertext">
-                Your <br>Logistics <br> <span class="whitebold">Partner</span>
-              </div>
-              <img src="https://app.salesdrip.com/users/myteam45814/Media14.jpg" style="width:100%">
+        <div class="testimonials">
+          <div class="testimonialsection">
+            <div class="bannertextservice">
+             <span class="whitebold">Testimonials</span>
             </div>
           </div>
-          <!-- End SlideShow -------------------------------------------------------->
-          <div class="simplycare">
-            <div class="sectiontitle">
+          <div class="testisection">
+            <div class="littletext">
               #wesimplycare
             </div>
-            <div class="underlinestyle">
-              <div class="topline"></div>
-              <div class="bottomline"></div>
+            <div class="sectiontitle black">
+              Testimonials
             </div>
-            <div class="italictext">
-              LandCal was born with the concept of taking customer service to the next level to let them know
-              that <br> we’re more than a traditional broker. We’re focused on the customer experience building long-term <br>
-              sustainable partnerships that foster innovation throughout the logistics supply chain.
+            <div class="underlinestyle black">
+              <div class="topline black"></div>
+              <div class="bottomline black"></div>
+            </div>
+            <div class="italictext darker">
+              We take helping our clients meet their customers' expectations very seriously. Our mission is to <br>
+              provide end-to-end supply chain visibility through our technology and leverage our carrier partners to <br>
+              find the right equipment for the right price every single time.
             </div>
           </div>
+          <div class="testiquotes">
+            <div class="quotesection">
+          <div class="testimonialquote">
+            Our client was in a furious rush to make a mission-
+            critical freight available for offshore operation, we
+            felt our back’s were against the wall… thankfully,
+             Evan and Josh were able to guide us every step of
+             the way and make our deadline. Thank you,
+              LandCal
+          </div>
+          <div class="testline"></div>
+          <div class="profile">
+          <img src="https://app.salesdrip.com/users/myteam45814/Media71.jpg" alt="">
+          <div class="name">
+            <span class="bigname">CHANDRA EDWARDS</span><br><span class="blue">OIL & GAS OPERATIONS MANAGER</span>
+          </div>
+          </div>
+            </div>
+          <div class="quotesection">
+            <div class="testimonialquote">
+            Working with Josh and Evan collectively has been a great experience. They are thorough and to the point
+             when working with the client. I’m impressed with the growth of LandCal and excited to see the future!
+          </div>
+            <div class="testline"></div>
+            <div class="profile">
+          <img src="https://app.salesdrip.com/users/myteam45814/Media70.jpg" alt="">
+          <div class="name">
+            <span class="bigname">BRIAN THOMAS</span><br><span class="blue">LOGISTICS MANAGER</span>
+          </div>
+          </div>
+          </div>
+            </div>
+        </div>
+
           <!-- Sponsor Banner -------------------------------------------------------------------->
 
           <div class="sponsorbanner">
@@ -90,7 +117,6 @@
 
 
 
-      </div>
 
     <!-- Footer Section ------------------------------------------------------>
     <div class="footsection">
@@ -140,30 +166,5 @@
 
       </div>
     </div>
-
-    <!-- SlideShow Script------------------------------------------------------------------------>
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-
-        setTimeout(showSlides, 12000); // Change image every 2 seconds
-      }
-</script>
-<!-- End Slideshow script---------------------------------------------------------------------->
-
 </body>
 </html>
