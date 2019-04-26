@@ -45,76 +45,51 @@
 			<!-- end header area ---------------------------------------------------->
 
       <div class="main">
-        <!-- SlideShow--------------------------------------------------------------->
-        <div class="services">
-          <div class="ourservices">
-            <div class="bannertextservice">
-             Our <br> <span class="whitebold">Services</span>
-            </div>
+        <div class="contactus dark">
+          <div class="bannertextservice center">
+           <span class="whitebold">contact us</span>
           </div>
-          <div class="servicesection dark">
-            <div class="servimg">
-              <img src="https://app.salesdrip.com/users/myteam45814/Media7.png" alt="">
-            </div>
-            <div class="servpara">
-              <div class="sectiontitle">
-                consultation
-              </div>
-              <div class="underlinestyle lowspace">
-                <div class="topline"></div>
-                <div class="bottomline"></div>
-              </div>
-              We look to improve customer service operations in order to develop cost-effective solutions.
-            </div>
-          </div>
-          <div class="servicesection dark">
-            <div class="servimg">
-              <img src="https://app.salesdrip.com/users/myteam45814/Media77.png" alt="test">
-            </div>
-            <div class="servpara">
-              <div class="sectiontitle">
-                logistics
-              </div>
-              <div class="underlinestyle lowspace">
-                <div class="topline"></div>
-                <div class="bottomline"></div>
-              </div>
-              Coordinate, plan and manage your freight both domestically and internationally.
-            </div>
-            </div>
-          </div>
-          <div class="servicesection dark">
-            <div class="servimg">
-              <img src="https://app.salesdrip.com/users/myteam45814/Media78.png" alt="">
-            </div>
-            <div class="servpara">
-              <div class="sectiontitle">
-                Warehousing
-              </div>
-              <div class="underlinestyle lowspace">
-                <div class="topline"></div>
-                <div class="bottomline"></div>
-              </div>
-              With facilities around the United States, all climate controlled and safely secured.
-            </div>
-          </div>
-          <div class="servicesection dark">
-            <div class="servimg">
-              <img src="https://app.salesdrip.com/users/myteam45814/Media11.png" alt="">
-            </div>
-            <div class="servpara">
-              <div class="sectiontitle">
-                Freight
-              </div>
-              <div class="underlinestyle lowspace">
-                <div class="topline"></div>
-                <div class="bottomline"></div>
-              </div>
-              Domestic and International, mission-critical goods to less-than-truckload–we do it all!
-            </div>
-          </div>
-
         </div>
+        <div id="map" style="width:100%;height:400px;"></div>
+  <script>
+    function initMap() {
+      var myLatLng = {lat: 38.216261, lng: -84.538572};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: myLatLng
+      });
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC27vtkXCIigFJQHrjmMRbmAvm7DAvO96E&callback=initMap">
+  </script>
+
+   <div class="greenstrip"> </div>
+
+   <div class="locate">
+   <div class="locateinfo">
+     122 Edwards Ave Suite 3, <br>Georgetown, KY 40324 <br><br> Toll Free: 844-403-4053 <br> <br>sales@shiplandcal.com
+   </div>
+   <div class="form">
+     <div class="sectiontitle black">
+      HAVE A QUESTION – DON'T HESITATE TO ASK!
+     </div>
+     <div class="underlinestyle lowspace black">
+       <div class="topline"></div>
+       <div class="bottomline"></div>
+     </div>
+   </div>
+
+   </div>
+       </div>
+
+
+
 
           <!-- Sponsor Banner -------------------------------------------------------------------->
 

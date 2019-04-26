@@ -73,6 +73,10 @@ background-color: rgb(10, 10, 10);
 }
 
 .italictext {
+  display:flex;
+  justify-content: center;
+  margin:auto;
+  width: 70%;
   padding-top: 1.5rem;
   color: #CCCCCC;
   text-align: center;
@@ -135,6 +139,8 @@ background-color: rgb(10, 10, 10);
   padding-right: 5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-right: 1px solid #CCCCCC;
 }
 
@@ -279,6 +285,114 @@ margin-left: 2rem;
   color: white;
 }
 
+/*-- Our Team Section----------------------------------------------------------------------------------*/
+
+.ourteam {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-image: url("https://app.salesdrip.com/users/myteam45814/Media4.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  height: 70rem;
+}
+
+.teamsection {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.teammember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 3rem;
+}
+
+.teammember img {
+  90%;
+}
+
+.aboutmember {
+  width: 110%;
+  text-align: center;
+  color: white;
+  background-color: #4385F5;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.aboutmember a {
+  color: #4385F5;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: white;
+  padding: .6rem .6rem .6rem .6rem;
+}
+
+.aboutmember a img {
+  padding-bottom: .3rem;
+}
+/*-- Contact Section----------------------------------------------------------------------------------*/
+.mapsection {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map {
+  height: 100%;
+}
+
+.contactus {
+  width: 100%;
+  height: 20rem;
+}
+
+.locate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.locateinfo {
+  margin-left: 15%;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.form {
+  margin-right: 15%;
+  color: black;
+}
 
 /*-- Footer Section----------------------------------------------------------------------------------*/
 
@@ -423,8 +537,6 @@ margin-right: 8rem;
 }
 
 #navitem {
-
-
   transition: all 400ms ease;
 }
 
@@ -436,60 +548,102 @@ margin-right: 8rem;
   flex-direction: row;
 	}
 #nav{
-  z-index: 3;
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  color: rgb(30, 29, 27);
-  transition: all 300ms ease;
+  height: 5rem;
+  transition: all 400ms ease;
 	}
 
 #nav li{
+  min-width: 10rem;
   z-index: 3;
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
   color: rgb(30, 29, 27);
   transition: all 300ms ease;
 	}
 #nav a {
   text-transform: uppercase;
-  display: flex;
-  width: 100%;
-  height: 70%;
-  justify-content: flex-start;
-  text-align: left;
-  font-size: 90%;
-  padding-left: 1rem;
-  padding-right: 3rem;
-  padding-top: .30rem;
-  padding-bottom: .08rem;
-  font-family: 'Oswald',"Helvetica Neue",Helvetica,Arial,sans-serif;
-  border-bottom: 4px solid rgb(231, 231, 229);
-  letter-spacing: .08rem;
-  transition: all 300ms ease;
-  font-weight: 300;
+  border-bottom: 2px solid rgb(10, 10, 10);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left:1.5rem;
+  padding-right: 1.5rem;
+  list-style: none;
+  color: #44d400;
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  transition: all 400ms ease;
+  margin: 1.5;
 }
 
-#nav ul{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  border-bottom-color: rgb(63, 71, 77);
-	}
 
 #nav a:hover{
-  background-color: white;
-  color: rgb(7, 139, 255);
-  border-bottom: 4px solid rgb(7, 139, 255);
+  border-bottom: 2px solid white;
+  color: white;
 	}
 
 .activeNav {
 	text-decoration: none !important;
 }
+
+
+/*--- DROPDOWN ---*/
+#nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+	background-color: rgb(10, 10, 10); /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background-color: rgb(10, 10, 10); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:			none;
+	position:			relative;
+  bottom: 0;
+	left:				-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	padding:			0; /* This gets rid of any alignment issues */
+	}
+#nav ul li{
+  background-color: rgb(10, 10, 10);
+  z-index: 3;
+	padding-top:		0px; /* Introducing a padding between the li and the a give the illusion spaced items */
+  border: none;
+  width: 80%;
+	}
+#nav ul li a{
+  background-color: rgb(10, 10, 10);
+  font-size: 12px;
+  width: 80%;
+  position: relative;
+  padding: 1rem;
+  /* Stop text wrapping and creating multi-line dropdown items */
+	}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:				0; /* Bring back on-screen when needed */
+	}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:	none;
+	}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	background-color: rgb(10, 10, 10);
+	text-decoration:	none;
+	color:				<!-- Color :: Bold-Pro Navigation Dropdown Font Color :: #ffffff -->;
+	font-size:			12px;
+	line-height:		18px;
+	}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background-color: rgb(10, 10, 10);
+	color:				<!-- Color :: Bold-Pro Navigation Dropdown Font Hover Color :: #ffffff -->;
+	text-decoration:	underline;
+	}
+
+  #nav ul li a {
+    border-color: rgb(68, 212, 0);
+  }
+
+
+
+
 
 /*-- Animated Slide Show-----------------------------------------------------------------------*/
 {box-sizing: border-box;}
@@ -600,4 +754,113 @@ img {vertical-align: middle;}
 
 .blue {
   color: #4385F5;
+}
+
+.pushleft {
+  margin-left: 20%;
+}
+
+.center {
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 3%;
+}
+
+.greenstrip {
+  width: 100%;
+  height: 1rem;
+  background-color: rgb(68, 212, 0);
+}
+
+/*-- Responsive styling --------------------------------------------------------*/
+
+@media only screen and (max-width: 1500px){
+  .sponsorbanner {
+    justify-content: center;
+  }
+  .sponsorbanner img {
+    width: 20%;
+  }
+  .whitebold {
+    font-size: 6rem;
+  }
+  .bannertextservice {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+.headsection {
+  flex-direction: column;
+  height: 90px;
+  justify-content: flex-start;
+}
+.headlogo {
+  margin-top: 1rem;
+  margin-left: 0;
+}
+.testiquotes {
+  flex-direction: column;
+}
+#navitem a {
+  padding-top: 0;
+}
+.members {
+  flex-direction: column;
+}
+.center{
+  margin: 0;
+}
+.contactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locateinfo {
+  font-size: 1.5rem;
+}
+.sectiontitle {
+  font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 850px){
+  #controlPanel{
+    flex-direction: column;
+  }
+  .control_panel {
+    flex-direction: column;
+  }
+  #controlPanel ul {
+    flex-direction: column;
+    width: 30rem;
+    height: 8rem;
+    flex-wrap: wrap;
+  }
+  #controlPanel ul li {
+    margin: .8rem;
+  }
+  .headsection {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .whysection {
+    flex-direction: column;
+    height: 35rem;
+  }
+  .reason {
+    margin: 1rem;
+  }
+  .servimg img {
+    width: 75px;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+
+}
+
+@media only screen and (max-width: 1300px){
+
 }
