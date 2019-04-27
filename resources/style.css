@@ -787,6 +787,9 @@ img {vertical-align: middle;}
   .bannertextservice {
     font-size: 6rem;
   }
+  .bannertext {
+    font-size: 6rem;
+  }
 }
 
 @media only screen and (max-width: 1150px){
@@ -857,10 +860,77 @@ img {vertical-align: middle;}
   }
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 755px){
+.headsection {
+  flex-direction: column;
+  height: 18rem;
+}
+
+.whitebold {
+  font-size: 3rem;
+}
+
+.testimonialquote {
+  width: 30rem;
+}
+
+.bannertextservice {
+  font-size: 3rem;
+}
+
+.bannertext {
+  font-size: 3rem;
+}
+
+.upperfootrow {
+  height: 20rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lowerfoot {
+    height: 10rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediasection {
+  margin: 1rem 0px;
+}
 
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 430px){
+  .control_panel {
+    width: 80%;
+  }
+  .testimonialquote {
+    width: 20rem;
+    margin-top: 1rem;
+  }
+  .headsection {
+    height: 18rem;
+  }
+}
 
+@media only screen and (max-width: 380px){
+  .control_panel {
+    width: 60%;
+  }
+
+  #navitem a {
+    padding: 1rem;
+  }
+
+  #controlPanel {
+    margin-right: 5.5rem;
+  }
+
+  .servimg img {
+    margin-right: 0;
+    padding-right: 3rem;
+  }
+  #testtitle {
+    font-size: 2rem;
+  }
 }
