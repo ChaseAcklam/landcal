@@ -153,6 +153,37 @@ background-color: rgb(10, 10, 10);
   color: rgb(68, 212, 0);
 }
 
+.parainfo {
+  text-align: center;
+  color: rgb(68, 212, 0);
+}
+
+.titleinfo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem 0px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(68, 212, 0);
+}
+
+.infocontainer {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  padding: 2rem 0px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 /*-- Testimonial Section----------------------------------------------------------------------------------*/
 
 .testimonialsection {
@@ -237,6 +268,115 @@ background-color: rgb(10, 10, 10);
 .name {
 margin-left: 2rem;
 }
+/*-- Login Screen -----------------------------------------------------------------------*/
+
+.loginscreen {
+  padding-top: 3rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(10, 10, 10);
+}
+
+.loginsection {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logintitle {
+  line-height: 1.1;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  font-size: 3rem;
+}
+
+.loginbox {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  border: 3px solid white;
+  border-radius: 12px;
+}
+
+.login_visible{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login_fields_division{
+  width: 90%;
+}
+
+.user_input{
+  width: 100%;
+  height: 5rem;
+  border: 2px solid rgb(68, 212, 0);
+  border-radius: 8px;
+}
+
+.login_btn_links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.inlineBlock a{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.spaceline {
+  border-right: 1px solid white;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+
+.new_login_btn {
+  padding: 6px 14px;
+color: #fff;
+background: rgb(68, 212, 0);
+min-width: 125px;
+outline: none;
+box-shadow: none;
+border: 0;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+font-size: 16px;
+border-radius: 5px;
+}
+
+.empty {
+  height: 30px;
+}
+
+.nextto {
+
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+  border-bottom: 3px dashed rgb(68, 212, 0);
+}
+
+
 /*-- Why Us Section----------------------------------------------------------------------------------*/
 
 .whyussection {
@@ -756,6 +896,46 @@ img {vertical-align: middle;}
   letter-spacing: .8rem;
 }
 
+.wrap {
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.thirty {
+  width: 30%;
+}
+
+.fifty {
+  width: 50%l;
+}
+
+.seventy {
+  width: 70%;
+}
+
+.blackborder {
+  border-color: rgb(10, 10, 10);
+}
+
+.noborde {
+  border: none;
+}
+
+.sixty {
+  width: 60%;
+}
+
+.subhead {
+  font-size: 1.5rem;
+}
+
+.titleblack a{
+  text-decoration: none;
+  border-bottom: 1px solid rgb(68, 212, 0);
+  color: black;
+  font-size: 1.3rem;
+}
+
 .dark {
   background-color: rgb(10, 10, 10);
 }
@@ -767,6 +947,41 @@ img {vertical-align: middle;}
 .black {
   color: black;
   border-bottom-color: black;
+}
+
+.alignleft {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.titlegreen {
+padding: 1.5rem 0px;
+font-size: 2rem;
+letter-spacing: 1px;
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+color: rgb(68, 212, 0);
+}
+
+.subtitlegreen {
+  padding: 1.5rem 0px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: rgb(68, 212, 0);
+}
+
+.titleblack {
+  padding: 1.5rem 0px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: black;
 }
 
 .darker {
@@ -799,6 +1014,10 @@ img {vertical-align: middle;}
   width: 100%;
   height: 1rem;
   background-color: rgb(68, 212, 0);
+}
+
+.white {
+  color: white;
 }
 
 /*-- Responsive styling --------------------------------------------------------*/
