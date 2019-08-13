@@ -1,3 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="<!-- Teamname -->" />
+<meta name="description" content="Official website for <!-- Teamname -->" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,
+400,400i,500,500i,600,600i,700,700i,800,900|Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<title><!-- Teamname --></title>
+<style type="text/css">
 html {
   font-size: 12px;
   overflow-x: hidden;
@@ -7,11 +18,6 @@ html {
 body {
   margin: 0;
   width: 100%;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
 }
 
 .main {
@@ -156,7 +162,6 @@ z-index: 10;
   text-align: center;
   width: 50%;
   color: rgb(68, 212, 0);
-  font-size: 1.5rem;
 }
 
 .parainfo {
@@ -231,11 +236,12 @@ z-index: 10;
 }
 
 .testiquotes {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 40rem;
+  height: 30rem;
 }
 
 .testimonialquote {
@@ -245,7 +251,7 @@ z-index: 10;
   border: 1px solid #CCCCCC;
   font-style: italic;
   color: black;
-  padding: 3rem 3rem 8rem 3rem;
+  padding: 3rem 3rem 5rem 3rem;
   font-family: 'Muli', sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
@@ -258,9 +264,7 @@ z-index: 10;
   border-top: 2px solid #4385F5;
 }
 .quotesection {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
+  margin-left: 8rem;
 }
 
 .quotesection img{
@@ -270,12 +274,11 @@ z-index: 10;
   width: 10%;
 }
 
-_:-ms-fullscreen, :root .photobannerie { display:flex; }
-
-_:-ms-fullscreen, :root .photobanner { display:none; }
-
 .profile {
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 
 .name {
@@ -388,102 +391,6 @@ border-radius: 5px;
   margin-bottom: 5rem;
   border-bottom: 3px dashed rgb(68, 212, 0);
 }
-
-/*---------------------------------- Scrolling Banner CSS -----------------------------*/
-.photobanner {
-  display: flex;
-  justify-content: center;
- height: 9rem;
- width: 4000px;
- margin-top: 3rem;
- margin-left: 1800px;
-}
-
-.photobannerie{
-  display: none;
-  width: 100%;
-  justify-content: center;
-}
-
-.divimg {
-  margin: 0px 2em;
-}
-
-.photobanner img {
-  width: auto;
-  height: auto;
-  overflow-x: hidden;
-}
-
-.whitebanner {
-  position: absolute;
-  width: 5000px;
-  height: 600px;
-  background-color: white;
-  left: 100%;
-}
-
-
-/*keyframe animations*/
-.first {
- -webkit-animation: bannermove 30s linear infinite;
-    -moz-animation: bannermove 30s linear infinite;
-     -ms-animation: bannermove 30s linear infinite;
-      -o-animation: bannermove 30s linear infinite;
-         animation: bannermove 30s linear infinite;
-}
-
-@keyframes "bannermove" {
- 0% {
-    margin-left: 0px;
- }
- 100% {
-    margin-left: -11475px;
- }
-
-}
-
-@-moz-keyframes bannermove {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -11475px;
- }
-
-}
-
-@-webkit-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -11475px;
- }
-
-}
-
-@-ms-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -11475px;
- }
-
-}
-
-@-o-keyframes "bannermove" {
- 0% {
-   margin-left: 0px;
- }
- 100% {
-   margin-left: -11475px;
- }
-
-}
-
-
 
 
 /*-- Why Us Section----------------------------------------------------------------------------------*/
@@ -832,7 +739,6 @@ margin-right: 8rem;
 
 #nav li{
   min-width: 10rem;
-  max-width: 15rem;
   z-index: 3;
   text-align: left;
   display: flex;
@@ -888,6 +794,7 @@ margin-right: 8rem;
 	padding-top:		0px; /* Introducing a padding between the li and the a give the illusion spaced items */
   border: none;
   width: 80%;
+  height: 4.5rem;
 	}
 #nav ul li a{
   background-color: rgb(10, 10, 10);
@@ -1148,23 +1055,6 @@ color: rgb(68, 212, 0);
   .bannertext {
     font-size: 6rem;
   }
-.headsection {
-  height: 120px;
-}
-
-#nav li {
-  max-width: 15rem;
-
-}
-
-#nav ul li {
-  text-align: center;
-}
-
-#nav ul {
-  width: 14rem;
-}
-
 }
 
 @media only screen and (max-width: 1150px){
@@ -1238,7 +1128,7 @@ color: rgb(68, 212, 0);
 @media only screen and (max-width: 755px){
 .headsection {
   flex-direction: column;
-  height: auto;
+  height: 18rem;
 }
 
 .whitebold {
@@ -1277,173 +1167,28 @@ color: rgb(68, 212, 0);
 
 @media only screen and (max-width: 430px){
   .control_panel {
-    width: 100%;
-    flex-direction: row;
+    width: 80%;
   }
-
-  .ourservices {
-    background-attachment: local;
-  }
-
-  .testimonialsection {
-    background-attachment: local;
-  }
-
-  .whyussection {
-    background-attachment: local;
-  }
-
-  .ourteam {
-    background-attachment: local;
-  }
-
-  #controlPanel ul li {
-    margin: 0;
-  }
-
-  #nav li {
-    min-width: 3rem;
-  }
-
-  #nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  #nav ul {
-    display: none;
-  }
-
-  #nav a {
-    border: none;
-    padding: 0;
-    margin: 1rem;
-  }
-
-  #controlPanel ul {
-    flex-direction: row;
-    height: auto;
-    width: auto;
-  }
-
-  #controlPanel {
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    height: auto;
-    margin: 0;
-    justify-content: center;
-  }
-
   .testimonialquote {
     width: 20rem;
     margin-top: 1rem;
   }
   .headsection {
     height: 18rem;
-    padding-bottom: 1rem;
   }
-
-  .servicesection {
-    flex-direction: column;
-    padding: 1rem;
-    width: auto;
-  }
-
-  .profile {
-    margin-left: 4rem;
-  }
-
-  .servimg img {
-    border: none;
-    margin: 1.5rem;
-    display: none;
-  }
-
-  .servpara {
-    margin: 1rem;
-    width: 75%;
-  }
-
-  .learnmorebtn {
-    margin-bottom: 1rem;
-  }
-
-  .demo {
-  display: none!important;
-  }
-
-  ul li {
-    margin-top: 1rem;
-  }
-
-  iframe {
-    display: none;
-  }
-
-  .whitebold {
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  .bannertextservice {
-    display: flex;
-    justify-content: center;
-  }
-
-  .testiquotes {
-    height: auto;
-  }
-
-  .quotesection {
-    margin-top: 3rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .whyussection {
-    height: 30rem;
-  }
-
-  .whysection {
-    height: auto;
-  }
-
-  .reason {
-    margin: 3rem 0rem;
-  }
-
-  .form {
-    display: none;
-  }
-
-  .sponsorbanner {
-    margin-top: 4rem;
-    flex-wrap: wrap;
-  }
-
-  .sponsorbanner img {
-    width: 45%;
-  }
-
-  .photobanner {
-    display: none;
-  }
-
-  .bannertext {
-    margin-top: 5%;
-    line-height: 1.2;
-  }
-
 }
 
 @media only screen and (max-width: 380px){
+  .control_panel {
+    width: 60%;
+  }
 
   #navitem a {
     padding: 1rem;
+  }
+
+  #controlPanel {
+    margin-right: 5.5rem;
   }
 
   .servimg img {
@@ -1455,6 +1200,167 @@ color: rgb(68, 212, 0);
   }
 }
 
-@media only screen and (max-width: 320px){
+</style>
 
-}
+<script type="text/javascript" src="/scripts/app_scripts.js"></script>
+<script type="text/javascript" src="/scripts/fansite_scripts.js"></script>
+<script type="text/javascript" src="/scripts/FusionCharts.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald:700,400,300|Rubik:300,400,500" rel="stylesheet">
+</head>
+<body>
+			<!-- header area -->
+      <div class="headsection">
+      <div class="header">
+        <div class="upperhead">
+          <div class="headlogo">
+            <a href="	https://landcallogistics.salesdrip.com"><img src="https://app.salesdrip.com/users/myteam45814/Media63.png" alt=""></a>
+          </div>
+        </div>
+        </div>
+        <div class="control_panel">
+  						<div id="controlPanel">
+  							<label for="show-menu" class="show-menu">&equiv;</label>
+  							<input type="checkbox" id="show-menu" role="button">
+                <ul id="Page1Link">
+
+                </ul>
+
+
+
+  							<!-- CSS Control Panel -->
+  						</div>
+  						<div style="clear: both;"></div>
+  					</div>
+
+			</div>
+			<!-- end header area ---------------------------------------------------->
+
+      <div class="main">
+        <!-- SlideShow--------------------------------------------------------------->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="bannertext">
+                Your <br>Logistics <br> <span class="whitebold">Partner</span>
+              </div>
+              <img src="https://app.salesdrip.com/users/myteam45814/Media4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="bannertext">
+                Your <br>Logistics <br> <span class="whitebold">Partner</span>
+              </div>
+              <img src="https://app.salesdrip.com/users/myteam45814/Media14.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="bannertext">
+                Your <br>Logistics <br> <span class="whitebold">Partner</span>
+              </div>
+              <img src="https://app.salesdrip.com/users/myteam45814/Media180.jpg" style="width:100%">
+            </div>
+          </div>
+          <!-- End SlideShow -------------------------------------------------------->
+          <div class="simplycare">
+            <div class="sectiontitle">
+              #wesimplycare
+            </div>
+            <div class="underlinestyle">
+              <div class="topline"></div>
+              <div class="bottomline"></div>
+            </div>
+            <div class="italictext">
+              LandCal was born with the concept of taking customer service to the next level to let them know
+              that we’re more than a traditional broker. We’re focused on the customer experience building long-term
+              sustainable partnerships that foster innovation throughout the logistics supply chain.
+            </div>
+          </div>
+          <!-- Sponsor Banner -------------------------------------------------------------------->
+
+          <div class="sponsorbanner">
+          <img src="https://app.salesdrip.com/users/myteam45814/Media19.png" alt="">
+          <img src="https://app.salesdrip.com/users/myteam45814/Media3.png" alt="">
+          <img src="https://app.salesdrip.com/users/myteam45814/Media18.png" alt="">
+          <img src="https://app.salesdrip.com/users/myteam45814/Media13.png" alt="">
+          </div>
+
+
+
+          <!-- End Sponsor Banner -------------------------------------------------------------------->
+
+
+
+      </div>
+
+    <!-- Footer Section ------------------------------------------------------>
+    <div class="footsection">
+      <div class="upperfoot">
+        <h3>Landcal</h3>
+        <div class="upperfootrow">
+        <div class="upfoot">
+          Your Logistics Partner
+        </div>
+        <div  class="upfoot">
+          122 Edwards Ave Suite 3, Georgetown, KY 40324
+        </div>
+        <div class="upfoot">
+        Toll Free: 844-403-4053
+        </div>
+        <div class="upfoot">
+          sales@shiplandcal.com
+        </div>
+        </div>
+      </div>
+      <div class="lowerfoot">
+        <div class="copyright">
+        Copyright © 2018 - Company - All rights reserved
+        </div>
+        <div class="mediasection">
+          <div class="mediaicon">
+            <a href="#"><img src="https://app.salesdrip.com/users/myteam45814/Media66.jpg" alt=""></a>
+          </div>
+          <div class="mediaicon">
+            <a href="#"><img src="https://app.salesdrip.com/users/myteam45814/Media67.jpg" alt=""></a>
+          </div>
+          <div class="mediaicon">
+            <a href="#"><img src="https://app.salesdrip.com/users/myteam45814/Media64.jpg" alt=""></a>
+          </div>
+          <div class="mediaicon">
+            <a href="#"><img src="https://app.salesdrip.com/users/myteam45814/Media68.jpg" alt=""></a>
+          </div>
+          <div class="mediaicon">
+          <a href="#"> <img src="https://app.salesdrip.com/users/myteam45814/Media69.jpg" alt=""></a>
+          </div>
+          <div class="mediaicon">
+            <a href="#"><img src="https://app.salesdrip.com/users/myteam45814/Media65.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="footline">
+
+      </div>
+    </div>
+
+    <!-- SlideShow Script------------------------------------------------------------------------>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+
+        setTimeout(showSlides, 12000); // Change image every 2 seconds
+      }
+</script>
+<!-- End Slideshow script---------------------------------------------------------------------->
+
+</body>
+</html>
